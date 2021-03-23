@@ -4,4 +4,4 @@ package.json
 gulpfile.js
 style.css.map
 style.scss
-
+.gitignore
