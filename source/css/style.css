@@ -20,14 +20,17 @@ section {
 .header .container {
   padding-right: 0px;
   max-width: 100%;
+  padding-left: 0px;
 }
 .header .header__menu {
   padding-right: 0px;
 }
 .header .header__menu .col-12 {
+  margin-right: 15px;
   max-width: 950px;
   position: absolute;
-  padding-right: 0px;
+  padding-right: 15px;
+  padding-left: 30px;
 }
 .header .header__menu .col-12 ul {
   font-weight: bold;
@@ -78,21 +81,22 @@ section {
   color: #828282;
 }
 .header .header__person-info p.header__language {
-  margin-right: -30px;
   transform: rotate(-90deg);
   float: right;
   margin-top: 72px;
   font-weight: bold;
-  margin-right: -40px;
 }
 .header img {
   margin-bottom: 104px;
+  max-width: 920px;
 }
 .header .col-sm-12 img {
   display: block;
+  width: 100%;
 }
 .header .col-xs-12 img {
   display: none;
+  min-width: 85%;
 }
 
 .about-me {
@@ -239,12 +243,8 @@ section {
 }
 
 @media (max-width: 992px) {
-  .header__language {
-    margin-right: 0px;
-    padding-right: 40px;
-  }
   img {
-    max-width: 105%;
+    max-width: 100%;
   }
   .container {
     padding-left: 7.5px;
@@ -256,11 +256,17 @@ section {
 
 @media (max-width: 767px) {
   .header .header__person-info p.header__info {
-    padding-top: 38px;
+    width: 130%;
+  }
+  .header .header__person-info {
+    margin-top: 110px;
   }
 }
 
 @media (max-width: 574px) {
+  .header .header__menu .col-12 {
+    padding-left: 0px;
+  }
   .col-sm-12 img {
     display: none !important;
   }
@@ -356,6 +362,9 @@ section {
   }
   .header__burger.active span {
     transform: scale(0);
+  }
+  .header .header__menu .col-12 {
+    padding-right: 0px;
   }
 }
 
